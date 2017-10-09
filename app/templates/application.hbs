@@ -7,12 +7,14 @@
   }}
   <div class="navbar-header">
     {{navbar.toggle}}
-    {{#link-to "home" class="navbar-brand"}}St Mary's{{/link-to}}
+    {{#link-to "/" class="navbar-brand"}}St Mary's{{/link-to}}
   </div>
   {{#navbar.content}}
     {{#navbar.nav as |nav|}}
-      {{#nav.item}}{{#nav.link-to "home"}}Home{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to "/"}}Home{{/nav.link-to}}{{/nav.item}}
     {{/navbar.nav}}
   {{/navbar.content}}
 {{/bs-navbar}}
-{{outlet}}
+{{#bs-container}}
+  {{outlet}}
+{{/bs-container}}

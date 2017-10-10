@@ -12,8 +12,25 @@
 
 .navbar-default .navbar-brand {
   @include navbar-colors;
+  &:focus {
+    background-color: $primary-900;
+  }
+  &:hover {
+    background-color: $primary-900;
+  }
 }
 
 .navbar-default .navbar-nav > li > a {
   @include navbar-colors;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: $primary-800;
+  background-color: $primary-500;
+  &:focus {
+    background-color: $primary-900;
+  }
+  &:hover {
+    background-color: $primary-900;
+  }
 }
